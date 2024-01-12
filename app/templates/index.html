@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Página Inicial{% endblock %}
+{% block conteudo %}
+<h2>Hello {{ nome }}</h2>
+<p>Profissão: {{ dados.Profissão}}</p>
+<p>
+    <img class='imgpq' src="{{ url_for('static', filename='imagens/Eu.jpeg')}}" alt="Foto Rosto">
+</p>
+
+{% endblock %}
